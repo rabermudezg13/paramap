@@ -50,17 +50,19 @@ const potentialSchools = [
 ].map(([name,id],i)=>({key:'p'+i,name,id,type:'potential',address:'',query:`${name}, Miami-Dade County, Florida`}));
 
 const openingSchools = [
-  {name:'Carpe Diem Academia',address:'11025 SW 84th St, Cottage 8, Miami, FL 33173'},
-  {name:'St. Timothy',address:'5400 SW 102nd Ave, Miami, FL 33165'},
-  {name:'Cool Academy',address:'4601 NW 167th St, Miami Gardens, FL 33055'},
-  {name:'Beyond Academy',address:'10201 Bahia Drive, Miami, FL 33189'},
-  {name:'St. Michael the Archangel Catholic School',address:'300 NW 28th Ave, Miami, FL 33125'},
-  {name:'Ace Academy',address:'11025 SW 84th St, Cottage 10, Miami, FL 33173'},
-  {name:'Gordon Day School of Beth David Cong.',address:'2625 SW 3rd Ave, Miami, FL 33129'},
-  {name:"St. Mary’s Cathedral",address:'7485 NW 2nd Ave, Miami, FL 33150'},
-  {name:'Miami Learning Experience',address:'5651 SW 82nd Avenue Rd, Miami, FL 33143'},
-  {name:'Redland Christian Academy',address:'17700 SW 280th St, Homestead, FL 33031'},
-  {name:'Greater Miami',address:'500 NW 122nd Ave, Miami, FL 33182'}
+  {name:'EASTER SEALS ACADEMY',id:'2418',address:'1475 NW 14th Ave, Miami, FL 33125'},
+  {name:'THE DIVINE SAVIOR SCHOOL',id:'8393',address:'6055 NW 104th Ave, Suite 1, Doral, FL 33178'},
+  {name:'CRISTO REY MIAMI HIGH SCHOOL',id:'5909',address:'125 NE 119th St, North Miami, FL 33161'},
+  {name:'SAINT MARYS CATHEDRAL',id:'2844',address:'7485 NW 2nd Ave, Miami, FL 33150'},
+  {name:'ARCHBISHOP COLEMAN F. CARROLL HIGH',id:'3163',address:'10300 SW 167th Ave, Miami, FL 33196'},
+  {name:'GREATER MIAMI ACADEMY',id:'2547',address:'500 NW 122nd Ave, Miami, FL 33182'},
+  {name:'REDLAND CHRISTIAN ACADEMY INC.',id:'388',address:'17700 SW 280th St, Homestead, FL 33031'},
+  {name:'CARPE DIEM ACADEMIA INC.',id:'4870',address:'11025 SW 84th St, Cottage 8, Miami, FL 33173'},
+  {name:'UNIQUE LEARNING CENTER INC.',id:'908',address:'18950 SW 106th Ave, Suite 119, Miami, FL 33157'},
+  {name:'SAINT LOUIS COVENANT SCHOOL',id:'3230',address:'7270 SW 120th St, Pinecrest, FL 33156'},
+  {name:'ST. MICHAEL THE ARCHANGEL CATHOLIC SCHOOL',id:'',address:'300 NW 28th Ave, Miami, FL 33125'},
+  {name:'SAINT BRENDAN HIGH SCHOOL',id:'2808',address:'2950 SW 87th Ave, Miami, FL 33165'},
+  {name:'SAINT JAMES CATHOLIC SCHOOL',id:'2822',address:'601 NW 131st St, North Miami, FL 33168'}
 ].map((s,i)=>({key:'o'+i,...s,type:'opening',query:s.address}));
 
 const schools=[...potentialSchools,...openingSchools];
